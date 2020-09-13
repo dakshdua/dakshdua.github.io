@@ -54,12 +54,11 @@ h1 {
 }
 
 .social-icon {
-    height: 2rem;
-    width: 2rem;
-    margin-right: 0.5rem;
+    color: darkslategrey;
+    max-width: 32px;
+    padding-right: 0.75rem;
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
-    align-self: center;
 }
 
 @media (min-width: 576px) {

@@ -10,12 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;1,500&family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
     <title>Daksh Dua</title>
   </head>
   <body data-spy="scroll" data-target="#navbar-list" data-offset="500">
     <div class="container-fluid">
       <div class="row" id="page">
-        <div class="col-sm-3 px-0" id="nav-wrapper">
+        <div class="col-sm-3 col-md-2 px-0" id="nav-wrapper">
             <div class="bg-dark p-0 navbar-expand-sm navbar-dark" id="navbar">
               <button class="navbar-toggler shadow-sm" type="button" data-toggle="collapse" data-target="#navbar-list" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -32,22 +33,41 @@
               </div>
             </div>
         </div>
-        <div class="col-sm-9">
+        <div class="col-sm-9 col-md-10 px-0">
           <section class="content-section" id="about">
             <div>
               <h1 class="display-1">Daksh Dua</h1>
-              <p>
-                Hi, my name is Daksh (pronounced duck-shh) and I'm from central Jersey, although I briefly lived in Singapore for a couple years. Right now, I'm a second-year student at the University of Texas at Austin pursuing a B.S. in Computer Science and a Certificate in Core Texts and Ideas. I'm passionate about a variety of computer science fields inlcuding full-stack web development and robotics. However, I'm always excited to explore new aspects of computer science and look forward to doing so!
-              </p>
+              Hi, my name is Daksh (pronounced duck-shh) and I'm from central Jersey, although I lived in Singapore for a couple years. Right now, I'm a second-year student at the University of Texas at Austin pursuing a B.S. in Computer Science and a Certificate in Core Texts and Ideas. I'm passionate about a variety of computer science fields, including full-stack web development and robotics. On top of that, I look forward to exploring more about new aspects of computer science!
             </div>
           </section>
           <hr>
           <section class="content-section" id="projects">
-            <div>
-              <h1>Projects and Experience</h1>
-              <p>
-                Coming soon!
-              </p>
+            <div class="container-fluid px-0">
+              <h1>Recent Experience</h1>
+              <div class="row project py-2 align-items-center">
+                <div class="col-lg-3">
+                  <img class="project-image py-3 d-block m-auto img-fluid" src="assets/img/website-logo.png"/>
+                </div>
+                <div class="project-description col-lg-9">
+                  My most recent project has been the very website that you are reading. I wanted to get familiar mobile-first responsive web design, which is what led me to design this webpage! I used HTML, CSS and Javascript, along with Bootstrap.
+                </div>
+              </div>
+              <div class="row project py-2 align-items-center">
+                <div class="col-lg-3">
+                  <img class="project-image py-3 d-block m-auto img-fluid" src="assets/img/senate-logo.png"/>
+                </div>
+                <div class="project-description col-lg-9">
+                  I built an electronic voting platform using Node.js and PostgreSQL for the student Senate at UT Austin for a faster and more efficient alternative to roll-call votes. This project became particularly important when our meetings were moved online due to COVID-19 and is currently being used at biweekly General Assemblies. Check out the results from the last one <a href="https://utsenate.org/general-assembly-results" target="_blank">right here</a>.
+                </div>
+              </div>
+              <div class="row project py-2 align-items-center">
+                <div class="col-lg-3">
+                  <img class="project-image py-3 d-block m-auto img-fluid" src="assets/img/smads-logo.png"/>
+                </div>
+                <div class="project-description col-lg-9">
+                  For my CNS Inventors summer fellowship, I worked on a project to bring an autonomous fleet of robots onto UT's campus to deliver food and other goods. This project became more important as COVID-19 continued to get worse, as robot delivery systems reduce human-to-human contact significantly. Check out more at <a href="https://smads.netlify.app" target="_blank">smads.netlify.app</a>.
+                </div>
+              </div>
             </div>
           </section>
           <hr>

@@ -1,4 +1,5 @@
 html, body {
+    width: 100vw;
     position: relative;
     scroll-behavior: smooth;
 }
@@ -10,7 +11,7 @@ html, body {
 
 .content-section {
     min-height: 25vh;
-    padding: 5rem 1rem 5rem 1rem;
+    padding: 3em 2rem 3rem 2rem;
     display: flex;
     align-items: center;
 }
@@ -40,13 +41,13 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 
 * {
     font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
 }
 
 h1 {
     font-family: 'Barlow Condensed', sans-serif;
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .display-1 {
@@ -61,7 +62,24 @@ h1 {
     padding-bottom: 0.25rem;
 }
 
+.project-image {
+    max-width: 70%;
+    max-height: 8rem;
+}
+
+.project {
+    min-height: 35vh;
+}
+
 @media (min-width: 576px) {
+    * {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
     #navbar-list {
         position: absolute;
         top: 50%; left: 50%;
@@ -71,12 +89,8 @@ h1 {
     #navbar {
         position: fixed;
         height: 100vh;
-        width: 25%;
-        max-width: 200px;
-    }
-
-    #nav-wrapper {
-        max-width: 200px;
+        max-width: 25%;
+        min-width: 165px;
     }
 
     #navbar-list img {
@@ -85,7 +99,7 @@ h1 {
         max-height: 100px;
         border: 5px solid darkslategrey;
     }
-    
+
     #navbar-list .nav-item.active {
         color: white;
     }
@@ -94,5 +108,23 @@ h1 {
         min-height: 100vh;
         padding: 5rem 3rem 5rem 3rem;
 
+    }
+
+    .project-image {
+        max-width: 60%;
+    }
+
+    .project {
+        min-height: 60vh;
+    }
+}
+
+@media (min-width: 992px) {
+    .project-image {
+        max-width: 100%;
+    }
+
+    .project {
+        min-height: 45vh;
     }
 }
